@@ -36,10 +36,10 @@ form.addEventListener('submit', async (e) => {
         });
 
         if (!res.ok) {
-            const err = await res.json();
-            throw new Error(err.error || 'Unknown error');
+            const text = await res.text();
+            throw new Error("Backend error: " + text);
         }
-
+        
         const result = await res.json();
         console.log('Success:', result);
         alert("Thanks for submitting!");
