@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Quick Survey</h1>
+
+    <form id="surveyForm">
+        <div class="question">
+            <div class="options">
+            <p>1. What is your name?</p>
+            <input type="text" id="q1" name="q1" placeholder="Enter Name!">
+            </div>
+        </div>
+        <div class="question">
+            <div class="options">
+            <p>2. How old are you?</p>
+            <input type="text" id="q2" name="q2" placeholder="Enter Age!">
+            </div>
+        </div>
+        <div class="question">
+                <p>3. What is your gender</p>
+                <div class="options">
+                    <label for="q3_man"><input type="radio" id="q3_man" name="q3" value="Man"> Man</label>
+                    <label for="q3_woman"><input type="radio" id="q3_woman" name="q3" value="Woman"> Woman</label>
+                    <label for="q3_other"><input type="radio" id="q3_other" name="q3" value="Other"> Other</label>
+                </div>
+        </div>
+        <div class="question">
+            <p>4. What's your favorite color?</p>
+            <div class="options">
+                <label for="q4_red"><input type="radio" id="q4_red" name="q4" value="Red"> Red</label>
+                <label for="q4_blue"><input type="radio" id="q4_blue" name="q4" value="Blue"> Blue</label>
+                <label for="q4_green"><input type="radio" id="q4_green" name="q4" value="Green"> Green</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. How often do you exercise?</p>
+            <div class="options">
+                <label for="q5_daily"><input type="radio" id="q5_daily" name="q5" value="Daily"> Daily</label>
+                <label for="q5_weekly"><input type="radio" id="q5_weekly" name="q5" value="Weekly"> Weekly</label>
+                <label for="q5_rarely"><input type="radio" id="q5_rarely" name="q5" value="Rarely"> Rarely</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>6. What are your favorite numbers (choose up to three)</p>
+            <div class="options">
+                <label for="q6_0"><input type="checkbox" id="q6_0" name="q6" value="0" class="checkbox"> 0</label>
+                <label for="q6_1"><input type="checkbox" id="q6_1" name="q6" value="1" class="checkbox"> 1</label>
+                <label for="q6_2"><input type="checkbox" id="q6_2" name="q6" value="2" class="checkbox"> 2</label>
+                <label for="q6_3"><input type="checkbox" id="q6_3" name="q6" value="3" class="checkbox"> 3</label>
+                <label for="q6_4"><input type="checkbox" id="q6_4" name="q6" value="4" class="checkbox"> 4</label>
+                <label for="q6_5"><input type="checkbox" id="q6_5" name="q6" value="5" class="checkbox"> 5</label>
+                <label for="q6_6"><input type="checkbox" id="q6_6" name="q6" value="6" class="checkbox"> 6</label>
+                <label for="q6_7"><input type="checkbox" id="q6_7" name="q6" value="7" class="checkbox"> 7</label>
+                <label for="q6_8"><input type="checkbox" id="q6_8" name="q6" value="8" class="checkbox"> 8</label>
+                <label for="q6_9"><input type="checkbox" id="q6_9" name="q6" value="9" class="checkbox"> 9</label>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
